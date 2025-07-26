@@ -1,3 +1,5 @@
+package com.shape;
+
 public class Shape {
     protected String name;
     // create a constructor

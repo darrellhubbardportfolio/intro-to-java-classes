@@ -2,17 +2,18 @@ package com.shape;
 
 public class Circle extends Shape {
 
-    private double pi = 3.14159;
-    private double diameter;
-    private double radius = (diameter / 2);
+    double pi = 3.14159;
+    double diameter;
+    double radius;
     // constructor
     public Circle (String name, double diameter) {
         super(name);
         this.diameter = diameter;
+        this.radius = (diameter / 2);
     }
     // create a circumference
     public void Circumference() {
-        double circumference = 2 * pi * radius; // 2 * pi * radius;
-        System.out.printf("circumference is: %s",circumference);
+        double circumference = (2 * this.pi * this.radius); // 2 * pi * radius;
+        System.out.printf("circumference is: %s%n",circumference);
     }
 }
